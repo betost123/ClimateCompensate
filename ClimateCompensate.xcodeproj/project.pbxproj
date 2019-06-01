@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19C62A8022A11BF900989428 /* UNCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C62A7F22A11BF900989428 /* UNCalculation.swift */; };
 		E5E97CF4229FB7F600032547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E97CF3229FB7F600032547 /* AppDelegate.swift */; };
 		E5E97CF6229FB7F600032547 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E97CF5229FB7F600032547 /* ViewController.swift */; };
 		E5E97CF9229FB7F600032547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E97CF7229FB7F600032547 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19C62A7F22A11BF900989428 /* UNCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNCalculation.swift; sourceTree = "<group>"; };
 		E5E97CF0229FB7F600032547 /* ClimateCompensate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimateCompensate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E97CF3229FB7F600032547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5E97CF5229FB7F600032547 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				E5E97D05229FB99D00032547 /* helpers.swift */,
 				E5E97D07229FC86200032547 /* CalculateEmissionTableViewController.swift */,
 				E5E97D09229FD34C00032547 /* CalculationCells.swift */,
+				19C62A7F22A11BF900989428 /* UNCalculation.swift */,
 			);
 			path = ClimateCompensate;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				E5E97CF6229FB7F600032547 /* ViewController.swift in Sources */,
 				E5E97D08229FC86200032547 /* CalculateEmissionTableViewController.swift in Sources */,
+				19C62A8022A11BF900989428 /* UNCalculation.swift in Sources */,
 				E5E97D0A229FD34C00032547 /* CalculationCells.swift in Sources */,
 				E5E97CF4229FB7F600032547 /* AppDelegate.swift in Sources */,
 				E5E97D06229FB99D00032547 /* helpers.swift in Sources */,
@@ -297,13 +301,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TB7A3K9TR7;
 				INFOPLIST_FILE = ClimateCompensate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.ClimateCompensate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -315,13 +320,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TB7A3K9TR7;
 				INFOPLIST_FILE = ClimateCompensate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.ClimateCompensate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

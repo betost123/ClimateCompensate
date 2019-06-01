@@ -62,8 +62,10 @@ class ViewController: UIViewController {
     
     @objc func buttonMoveOn(sender: UIButton) {
         print("User want tot calculate carbon emissions")
-        let calculateEmissionsTableViewController = CalculateEmissionTableViewController()
-        present(calculateEmissionsTableViewController, animated: true, completion: nil)
+        //let calculateEmissionsTableViewController = CalculateEmissionTableViewController()
+        //present(calculateEmissionsTableViewController, animated: true, completion: nil)
+        let calcViewController = UNCalculation()
+        present(calcViewController, animated: true, completion: nil)
     }
     
     func setupView() {
@@ -72,7 +74,7 @@ class ViewController: UIViewController {
         inputsContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
         inputsContainerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         inputsContainerView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        inputsContainerView.heightAnchor.constraint(equalToConstant: 420).isActive = true
+        inputsContainerView.heightAnchor.constraint(equalToConstant: 430).isActive = true
         
         inputsContainerView.addSubview(pageTitle)
         pageTitle.leadingAnchor.constraint(equalTo: inputsContainerView.leadingAnchor, constant: 16).isActive = true
@@ -81,10 +83,10 @@ class ViewController: UIViewController {
         pageTitle.heightAnchor.constraint(equalToConstant: 90).isActive = true
         
         inputsContainerView.addSubview(infoText)
-        infoText.topAnchor.constraint(equalTo: pageTitle.bottomAnchor, constant: 16).isActive = true
+        infoText.topAnchor.constraint(equalTo: pageTitle.bottomAnchor, constant: 8).isActive = true
         infoText.trailingAnchor.constraint(equalTo: inputsContainerView.trailingAnchor, constant: -16).isActive = true
         infoText.leadingAnchor.constraint(equalTo: inputsContainerView.leadingAnchor, constant: 16).isActive = true
-        infoText.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        infoText.heightAnchor.constraint(equalToConstant: 250).isActive = true
         
         inputsContainerView.addSubview(continueButton)
         continueButton.centerXAnchor.constraint(equalTo: inputsContainerView.centerXAnchor).isActive = true
